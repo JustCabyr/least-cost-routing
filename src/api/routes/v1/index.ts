@@ -1,8 +1,9 @@
 import { Router } from 'express';
+import { leastCostRouting } from '../../controllers';
 
 const router = Router();
 
-router.route('/').get();
+router.route('/lcr').post(leastCostRouting);
 
 
 export default router;
